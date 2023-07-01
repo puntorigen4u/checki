@@ -1,5 +1,5 @@
 {
-  "name": "@concepto/checki",
+  "name": "checki",
   "version": "0.0.1",
   "description": "Checki is an AI-driven CLI tool that generates Jest unit tests for React components, improving testing efficiency.",
   "main": "lib/index.js",
