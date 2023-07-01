@@ -1,0 +1,70 @@
+{
+  "name": "@concepto/checki",
+  "version": "0.0.1",
+  "description": "Checki is an AI-driven CLI tool that generates Jest unit tests for React components, improving testing efficiency.",
+  "main": "lib/index.js",
+  "bin": "bin/cli",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development rollup -c && npm link",
+    "build": "cross-env NODE_ENV=production rollup -c && npm link",
+    "format": "prettier --write '**/*.{js,ts}'",
+    "postinstall": "patch-package"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/puntorigen4u/checki.git"
+  },
+  "keywords": [
+    "ai",
+    "cli",
+    "jest",
+    "unit-testing",
+    "react",
+    "test-generation",
+    "test-automation",
+    "react-testing",
+    "javascript",
+    "developer-tools"
+  ],
+  "author": "Pablo Schaffner",
+  "license": "MIT",
+  "bugs": {
+    "mail": "",
+    "url": "https://github.com/puntorigen4u/checki/issues"
+  },
+  "homepage": "https://github.com/puntorigen4u/checki#readme",
+  "dependencies": {
+    "@concepto/console": "*",
+    "cheerio": "^1.0.0-rc.12",
+    "colors": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "extractjs": "^0.3.1",
+    "find-root": "^1.1.0",
+    "minimist": "^1.2.8",
+    "patch-package": "^7.0.0",
+    "print-code": "^1.0.2",
+    "prompts": "^2.4.2",
+    "simple-encryptor": "^4.0.0",
+    "temp-dir": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@rollup/plugin-babel": "^5.1.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "@types/node": "^16.11.11",
+    "cross-env": "^7.0.3",
+    "prettier": "^2.5.1",
+    "rollup": "^2.23.1",
+    "rollup-plugin-typescript2": "^0.31.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.2"
+  },
+  "scarfSettings": {
+    "enabled": false
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
