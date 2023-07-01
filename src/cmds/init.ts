@@ -16,7 +16,7 @@ export default class Init extends Command {
         //const file = path.join(process.cwd(), this.arg.data)
         //set defaults
         //output directory 
-        if (!this.arg.path) this.arg.output = process.cwd(); // current path
+        if (!this.arg.path) this.arg.path = process.cwd(); // current path
         //this.arg.path = path.join(process.cwd(), this.arg.output)
         //this.log(`Processing *${this.arg.data}* as source`);
         //this.spinner = this.x_console.spinner({ color:'yellow' });
@@ -35,13 +35,10 @@ export default class Init extends Command {
     async process() {
         // $ checki init
         const self = this;
-        // DISPLAY task summary
-        this.title('Checki','yellow','cyan');
-        this.log(`\n`);
-
         // ** PROCESS **    
+        this.debug('using folder: '+this.arg.path)
         const spinner = this.x_console.spinner({ color:'yellow' });
-        spinner.start('Initializing checki ...');
+        spinner.start('Analyzing current folder ...');
         // read current path
         // read package.json of current path
         // check that this project is a real react project

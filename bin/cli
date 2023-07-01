@@ -14,7 +14,7 @@ const cmds = require('minimist')(process.argv.slice(2));
     if (typeof pkg.bin != 'object') bin_ = pkg.name;
     //let serial = await getSerial();
     const copyright = function() {
-        x_console.out({ message:`Crafted with passion @ 2022 by ${pkg.author}.`, color:'dim' });
+        x_console.out({ message:`Crafted with passion @ 2023 by ${pkg.author}.`, color:'dim' });
     };
     let printUsage = function(command='') {
         if (command!='' && x_helper.usage && x_helper.usage[command]) {
