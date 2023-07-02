@@ -1,0 +1,1 @@
+{"version":3,"file":"jsdoc.d.ts","sourceRoot":"","sources":["../../src/cmds/jsdoc.ts"],"names":[],"mappings":"AAAA,OAAO,OAAO,MAAM,qBAAqB,CAAA;AAIzC,MAAM,CAAC,OAAO,OAAO,KAAM,SAAQ,OAAO;IAEhC,IAAI;IAmBJ,QAAQ,CAAC,IAAI,EAAC,GAAG,EAAE,GAAE,OAAO,CAAC,OAAO,CAAC;IASrC,OAAO;CAuBhB"}

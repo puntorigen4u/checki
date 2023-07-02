@@ -20,5 +20,13 @@ export default class checki {
     async init(arg: any) {
         await (new cmds.Init(arg)).run();
     }
+
+    @command('Generates jsdoc test stories for each component within project', [
+        [   '-o',   '--openai',           'OpenAI apikey.'],
+        [   '-p',   '--path',             `Path of react project. Defaults to current path`],
+    ],'[options]')
+    async jsdoc(arg: any) {
+        await (new cmds.JsDoc(arg)).run();
+    }
     
 }

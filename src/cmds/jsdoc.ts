@@ -2,7 +2,7 @@ import Command from './../common/command'
 
 const fs = require('fs').promises, path = require('path');
 const node_process = process;
-export default class Init extends Command {
+export default class JsDoc extends Command {
 
     async init() {
         //@todo read this values from a theme.json file
@@ -16,7 +16,7 @@ export default class Init extends Command {
         //const file = path.join(process.cwd(), this.arg.data)
         //set defaults
         //output directory 
-        if (!this.arg.path) this.arg.path = process.cwd(); // current path
+        //if (!this.arg.path) this.arg.path = process.cwd(); // current path
         //this.arg.path = path.join(process.cwd(), this.arg.output)
         //this.log(`Processing *${this.arg.data}* as source`);
         //this.spinner = this.x_console.spinner({ color:'yellow' });
@@ -33,19 +33,21 @@ export default class Init extends Command {
     }
 
     async process() {
-        // $ checki init
+        // $ checki jsdoc
         const self = this;
         // ** PROCESS **    
-        this.debug('using folder: '+this.arg.path)
         const spinner = this.x_console.spinner({ color:'yellow' });
         spinner.start('Analyzing current folder ...');
         // read current path
-        // read package.json of current path
-        // check that this project is a real react project
-        // add jest, react-testing-library, checki as dev dependencies
-        // add checki scripts to package.json
-        // create checki.config.json on root with default values
+        // check there is a checki.config.json file
+        // if not, run init cmd first
+        // if yes, continue 
         // ask openAI API key to user if not defined as env variable or within existing checki.config.json
+        // read project structure
+        // read all jsx, or tsx files
+        // classify which are components
+        // read each component file and generate test stories for each one
+        // add them as jsdoc comment array on top of each component within @checki key
         spinner.succeed('Prepared for generating tests');
         
         //ready
