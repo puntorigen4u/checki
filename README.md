@@ -3,10 +3,10 @@
 </p>
 <p align="center">Checki is an AI-driven CLI tool that generates Jest unit tests for React components, improving testing efficiency.</p>
 <p align="center">
-    <a href="https://www.npmjs.com/~checki"><img src="https://img.shields.io/npm/v/checki.svg" alt="NPM Version" /></a>
-    <a href="https://www.npmjs.com/~checki"><img src="https://img.shields.io/npm/l/checki.svg" alt="Package License" /></a>
-    <a href="https://www.npmjs.com/~checki"><img src="https://img.shields.io/npm/dm/checki.svg" alt="NPM Downloads" /></a>
-    <a href="https://www.npmjs.com/~checki" target="_blank"><img src="https://img.shields.io/tokei/lines/github/puntorigen4u/checki"></a>
+    <a href="https://www.npmjs.com/package/checki"><img src="https://img.shields.io/npm/v/checki.svg" alt="NPM Version" /></a>
+    <a href="https://www.npmjs.com/package/checki"><img src="https://img.shields.io/npm/l/checki.svg" alt="Package License" /></a>
+    <a href="https://www.npmjs.com/package/checki"><img src="https://img.shields.io/npm/dm/checki.svg" alt="NPM Downloads" /></a>
+    <a href="https://www.npmjs.com/package/checki" target="_blank"><img src="https://img.shields.io/tokei/lines/github/puntorigen4u/checki"></a>
     <a href="https://twitter.com/punt0rigen" target="_blank"><img src="https://img.shields.io/twitter/follow/punt0rigen.svg?style=social&label=Follow"></a>
 </p>
 
